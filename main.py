@@ -1,3 +1,4 @@
+from decode import decode
 def print_menu():
     print("Menu")
     print("-------------")
@@ -37,7 +38,7 @@ if __name__ == '__main__':
             print()
 
         elif option == 2:
-            print(f"The encoded password is {encoded_password}, and the original password is {password}.")
+            print(f"The encoded password is {encoded_password}, and the original password is {decode(encoded_password)}.")
             pass
 
         elif option == 3:
